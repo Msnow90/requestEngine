@@ -1,6 +1,9 @@
 # requestEngine
 Throttle Requests sent out from application
 
+
+***To install : npm install requestengine
+
 RequestEngine uses a decorator function to wrap the request module's method and provide addtional functionality such as throttling
 requests.
 
