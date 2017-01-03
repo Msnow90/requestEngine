@@ -9,6 +9,7 @@ requests.
 
 To use simply (in main app module):
 
+<code>
 var RequestEngine = require("requestengine");
 
 
@@ -20,9 +21,8 @@ var requestEngine = new RequestEngine(10, 60)
 // Will ensure that no more than 10 requests will be sent out within every 60 seconds.
 
 
-(Next step, which can be done in any module without any require statements):
+// Next step, which can be done in any module without any require statements:
 
 
-// same format as request method from request module
-
-requestEngine.addRequest(url, callback);
+requestEngine.addRequest(url, callback); // same format as request method from request module
+</code>
