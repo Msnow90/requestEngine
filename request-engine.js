@@ -3,7 +3,7 @@
 var request = require("request");
 
 
-var requestEngine = function(reqLimit, timeInSeconds, loggerOptions){
+var requestEngine = function(reqLimit, timeInSeconds){
   // limit the number of requests in the given time provided
   this.reqLimit = reqLimit;
   // the frequency in which requestEngine will ensure we haven't reached a limit
@@ -12,8 +12,6 @@ var requestEngine = function(reqLimit, timeInSeconds, loggerOptions){
   this.requestCount = 0;
   // boolean to determine whether requests are allowed or not
   this.throttle = false;
-
-  this.logQueue = [];
 
   this.startTime = new Date().getTime();
 
